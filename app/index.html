@@ -26,8 +26,19 @@
           <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
             <div class="container">
               <div class="user-panel">
-                <span><span class="glyphicon glyphicon-user"></span></span>
-                Username
+                <!-- <button type="button" class="btn btn-sm btn-primary"><span class="glyphicon glyphicon-off"></span> Login with Github</button> -->
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm dropdown-toggle" data-toggle="dropdown">
+                    <span class="user-avatar">
+                      <span class="glyphicon glyphicon-user"></span>
+                    </span>
+                    Username <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="#"><span class="glyphicon glyphicon-off"></span> Logout</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-plus"></span> Add Talk</a></li>
+                  </ul>
+                </div>
               </div>
               <div class="user-actions">
                 <button type="button" class="btn btn-sm btn-primary">&#43; New Talk</button>
@@ -159,9 +170,9 @@
         <!-- endbuild -->
 
         <!-- build:js scripts/plugins.js -->
-<!--         <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/affix.js"></script>
-        <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/alert.js"></script>
         <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/dropdown.js"></script>
+        <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/affix.js"></script>
+<!--         <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/alert.js"></script>
         <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tooltip.js"></script>
         <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/modal.js"></script>
         <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/transition.js"></script>

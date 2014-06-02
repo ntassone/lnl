@@ -16,18 +16,35 @@ body {
 
 .user-panel {
   float: left;
-  font-weight: bold;
-  > span {
-    display: inline-block;
-    width: 28px;
-    height: 28px;
-    margin-right: 5px;
-    padding: 4px 6px;
-    background: white;
-    border-radius: 50%;
-    border: $border;
-    span {
-      color: #999;
+  .btn-group {
+    font-weight: bold;
+    .user-avatar {
+      display: inline-block;
+      width: 28px;
+      height: 28px;
+      margin-right: 5px;
+      padding: 4px 6px;
+      background: white;
+      border-radius: 50%;
+      border: $border;
+      span {
+        color: #999;
+      }
+    }
+    button {
+      padding: 0;
+      margin: 0;
+      background: transparent;
+      &:active {
+        box-shadow: none;
+      }
+    }
+    .caret {
+      margin-top: -1px;
+      margin-left: 3px;
+    }
+    &.open .dropdown-toggle {
+      box-shadow: none;
     }
   }
 }
