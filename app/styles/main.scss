@@ -54,7 +54,8 @@ body {
 }
 
 .form-group {
-  .checkbox {
+  .checkbox,
+  .radio {
     margin: 0;
     height: 25px;
     min-height: 0;
@@ -89,4 +90,21 @@ body {
     text-transform: uppercase;
     color: #999;
   }
+}
+
+//Talk page
+
+.back-arrow {
+  font-size: 15px;
+  position: relative;
+  top: -1px;
+}
+
+textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.cancel {
+  margin-right: 15px;
 }
